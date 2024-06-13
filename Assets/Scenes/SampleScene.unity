@@ -757,7 +757,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1297715343}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: Level3
+        m_MethodName: Level5Red
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.17582993, g: 0.41288278, b: 0.10389826, a: 1}
+  m_Color: {r: 0.7568628, g: 0.227451, b: 0.11764707, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -933,7 +933,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1297715343}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: Level5Red
+        m_MethodName: Level8Red
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1573,7 +1573,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1297715343}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: Level2
+        m_MethodName: Level2Second
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3256,7 +3256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &506017380
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5261,7 +5261,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1297715343}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: Level4Blue
+        m_MethodName: Level5RedSecond
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5296,7 +5296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11748006, g: 0.11053711, b: 0.74901956, a: 1}
+  m_Color: {r: 0.7568628, g: 0.227451, b: 0.11764707, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8161,7 +8161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1486375690
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8306,7 +8306,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1489337549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9547,7 +9547,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1297715343}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: Level1
+        m_MethodName: Level2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9582,7 +9582,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.11748006, g: 0.11053711, b: 0.74901956, a: 1}
+  m_Color: {r: 0.7568628, g: 0.227451, b: 0.11764707, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10484,7 +10484,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1297715343}
         m_TargetAssemblyTypeName: UI, Assembly-CSharp
-        m_MethodName: Level6Green
+        m_MethodName: Level8RedSecond
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10519,7 +10519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.17582993, g: 0.41288278, b: 0.10389826, a: 1}
+  m_Color: {r: 0.7568628, g: 0.227451, b: 0.11764707, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

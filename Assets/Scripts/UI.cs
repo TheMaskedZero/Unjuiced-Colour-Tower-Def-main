@@ -30,6 +30,9 @@ public class UI : MonoBehaviour
 
     Color stageColor;
 
+    List<Vector2> allColourCords = new List<Vector2>();
+    List<Vector2> halfAllColours = new List<Vector2>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -168,6 +171,9 @@ public class UI : MonoBehaviour
 
     public void Level2()
     {
+        allColourCords.Clear();
+        halfAllColours.Clear();
+
         showRemainingPanel.SetActive(true);
 
         score = Random.Range(75, 95);
@@ -188,12 +194,23 @@ public class UI : MonoBehaviour
         stageRefColour.GetComponent<SpriteRenderer>().color = stageColor;
         bannerRefColour1Part2.GetComponent<SpriteRenderer>().color = stageColor;
         bannerRefColour2Part2.GetComponent<SpriteRenderer>().color = stageColor;
-        Spawncolours.CIE1931xyCoordinates = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.001f);
+
+        allColourCords = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.0015f);
+        for (int i = 0; i < 36; i++)
+        {
+            halfAllColours.Add(allColourCords[i]);
+            allColourCords.Remove(allColourCords[i]);
+            Debug.Log(i);
+        }
+        Spawncolours.CIE1931xyCoordinates = halfAllColours;
         Spawncolours.maxSpawn = Spawncolours.CIE1931xyCoordinates.Count;
     }
 
     public void Level5Red()
     {
+        allColourCords.Clear();
+        halfAllColours.Clear();
+
         showRemainingPanel.SetActive(true);
 
         score = Random.Range(75, 95);
@@ -214,12 +231,23 @@ public class UI : MonoBehaviour
         stageRefColour.GetComponent<SpriteRenderer>().color = stageColor;
         bannerRefColour1Part2.GetComponent<SpriteRenderer>().color = stageColor;
         bannerRefColour2Part2.GetComponent<SpriteRenderer>().color = stageColor;
-        Spawncolours.CIE1931xyCoordinates = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.001f);
+
+        allColourCords = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.0015f);
+        for (int i = 0; i < 36; i++)
+        {
+            halfAllColours.Add(allColourCords[i]);
+            allColourCords.Remove(allColourCords[i]);
+            Debug.Log(i);
+        }
+        Spawncolours.CIE1931xyCoordinates = halfAllColours;
         Spawncolours.maxSpawn = Spawncolours.CIE1931xyCoordinates.Count;
     }
 
     public void Level8Red()
     {
+        allColourCords.Clear();
+        halfAllColours.Clear();
+
         showRemainingPanel.SetActive(true);
 
         score = Random.Range(75, 95);
@@ -240,7 +268,126 @@ public class UI : MonoBehaviour
         stageRefColour.GetComponent<SpriteRenderer>().color = stageColor;
         bannerRefColour1Part2.GetComponent<SpriteRenderer>().color = stageColor;
         bannerRefColour2Part2.GetComponent<SpriteRenderer>().color = stageColor;
-        Spawncolours.CIE1931xyCoordinates = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.001f);
+
+        allColourCords = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.0015f);
+        for (int i = 0; i < 36; i++)
+        {
+            halfAllColours.Add(allColourCords[i]);
+            allColourCords.Remove(allColourCords[i]);
+            Debug.Log(i);
+        }
+        Spawncolours.CIE1931xyCoordinates = halfAllColours; 
+        Spawncolours.maxSpawn = Spawncolours.CIE1931xyCoordinates.Count;
+    }
+
+    public void Level2Second()
+    {
+        allColourCords.Clear();
+        halfAllColours.Clear();
+
+        showRemainingPanel.SetActive(true);
+
+        score = Random.Range(75, 95);
+        scoreText.text = score.ToString() + "%";
+
+        Move.disabledMove = 0;
+        Click.disabledClick = 0;
+
+        levelSelectScreen.SetActive(false);
+        Spawncolours.timeStart = true;
+
+        Spawncolours.selectedLevel = 2;
+        Spawncolours.stage1 = true;
+
+        stageColor = blackBox.GetComponent<ConvertToP3>().Convert(new Vector2(0.55f, 0.4f));
+        bannerRefColour1.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour2.GetComponent<SpriteRenderer>().color = stageColor;
+        stageRefColour.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour1Part2.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour2Part2.GetComponent<SpriteRenderer>().color = stageColor;
+
+        allColourCords = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.0015f);
+        for (int i = 0; i < 36; i++)
+        {
+            halfAllColours.Add(allColourCords[i]);
+            allColourCords.Remove(allColourCords[i]);
+            Debug.Log(i);
+        }
+        Spawncolours.CIE1931xyCoordinates = allColourCords;
+        Spawncolours.maxSpawn = Spawncolours.CIE1931xyCoordinates.Count;
+    }
+
+    public void Level5RedSecond()
+    {
+        allColourCords.Clear();
+        halfAllColours.Clear();
+
+        showRemainingPanel.SetActive(true);
+
+        score = Random.Range(75, 95);
+        scoreText.text = score.ToString() + "%";
+
+        Move.disabledMove = 0;
+        Click.disabledClick = 0;
+
+        levelSelectScreen.SetActive(false);
+        Spawncolours.timeStart = true;
+
+        Spawncolours.selectedLevel = 5;
+        Spawncolours.stage1 = true;
+
+        stageColor = blackBox.GetComponent<ConvertToP3>().Convert(new Vector2(0.55f, 0.4f));
+        bannerRefColour1.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour2.GetComponent<SpriteRenderer>().color = stageColor;
+        stageRefColour.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour1Part2.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour2Part2.GetComponent<SpriteRenderer>().color = stageColor;
+
+        allColourCords = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.0015f);
+        for (int i = 0; i < 36; i++)
+        {
+            halfAllColours.Add(allColourCords[i]);
+            allColourCords.Remove(allColourCords[i]);
+            Debug.Log(i);
+        }
+        Spawncolours.CIE1931xyCoordinates = allColourCords;
+        Spawncolours.maxSpawn = Spawncolours.CIE1931xyCoordinates.Count;
+    }
+
+    public void Level8RedSecond()
+    {
+        allColourCords.Clear();
+        halfAllColours.Clear();
+
+        showRemainingPanel.SetActive(true);
+
+        score = Random.Range(75, 95);
+        scoreText.text = score.ToString() + "%";
+
+        Move.disabledMove = 0;
+        Click.disabledClick = 0;
+
+        levelSelectScreen.SetActive(false);
+        Spawncolours.timeStart = true;
+
+        Spawncolours.selectedLevel = 8;
+        Spawncolours.stage1 = true;
+
+        stageColor = blackBox.GetComponent<ConvertToP3>().Convert(new Vector2(0.55f, 0.4f));
+        bannerRefColour1.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour2.GetComponent<SpriteRenderer>().color = stageColor;
+        stageRefColour.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour1Part2.GetComponent<SpriteRenderer>().color = stageColor;
+        bannerRefColour2Part2.GetComponent<SpriteRenderer>().color = stageColor;
+
+        allColourCords = blackBox.GetComponent<CalculateCIE1931xyCoordinates>().CreateCoordinates(new Vector2(0.55f, 0.4f), 0.0015f);
+        for (int i = 0; i < 36; i++)
+        {
+            halfAllColours.Add(allColourCords[i]);
+            allColourCords.Remove(allColourCords[i]);
+            Debug.Log(i);
+        }
+        Spawncolours.CIE1931xyCoordinates = allColourCords;
         Spawncolours.maxSpawn = Spawncolours.CIE1931xyCoordinates.Count;
     }
 
